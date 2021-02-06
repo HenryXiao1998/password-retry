@@ -1,14 +1,14 @@
 password = 'a123456'
 i = 3
 while i > 0:
+	i = i-1
 	pwd = input('请输入密码:')
 	if pwd == password:
 		print('登入成功！')
 		break
 	else:
-		i = i-1
 		if i > 0:
 			print('密码错误，还有',i,'次机会')
-if i == 0:
-	print('登入失败，请稍后重试!')
+		else:
+			print('登入失败，请稍后重试!')
 	
